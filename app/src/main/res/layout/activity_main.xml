@@ -44,7 +44,7 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="2"
+            android:tag="1"
             app:layout_column="1"
             app:layout_row="0" />
 
