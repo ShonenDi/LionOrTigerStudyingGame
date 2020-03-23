@@ -32,7 +32,7 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="1"
+            android:tag="0"
             app:layout_column="0"
             app:layout_row="0" />
 
@@ -56,7 +56,7 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="3"
+            android:tag="2"
             app:layout_column="2"
             app:layout_row="0" />
 
@@ -68,7 +68,7 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="4"
+            android:tag="3"
             app:layout_column="0"
             app:layout_row="1" />
 
@@ -80,7 +80,7 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="5"
+            android:tag="4"
             app:layout_column="1"
             app:layout_row="1" />
 
@@ -92,21 +92,9 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="6"
+            android:tag="5"
             app:layout_column="2"
             app:layout_row="1" />
-
-        <ImageView
-            android:id="@+id/img8"
-            android:layout_width="100dp"
-            android:layout_height="100dp"
-            android:layout_margin="5dp"
-            android:alpha="0.2"
-            android:background="#000000"
-            android:onClick="getAnimationOnImgView"
-            android:tag="8"
-            app:layout_column="1"
-            app:layout_row="2" />
 
         <ImageView
             android:id="@+id/img7"
@@ -116,8 +104,20 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="7"
+            android:tag="6"
             app:layout_column="0"
+            app:layout_row="2" />
+
+        <ImageView
+            android:id="@+id/img8"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_margin="5dp"
+            android:alpha="0.2"
+            android:background="#000000"
+            android:onClick="getAnimationOnImgView"
+            android:tag="7"
+            app:layout_column="1"
             app:layout_row="2" />
 
         <ImageView
@@ -128,7 +128,7 @@
             android:alpha="0.2"
             android:background="#000000"
             android:onClick="getAnimationOnImgView"
-            android:tag="9"
+            android:tag="8"
             app:layout_column="2"
             app:layout_row="2" />
 
