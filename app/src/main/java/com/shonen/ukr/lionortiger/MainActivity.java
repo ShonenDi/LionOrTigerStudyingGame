@@ -25,11 +25,7 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        int length = playersChoices.length;
-        for (int i = 0; i <length ; i++) {
-            playersChoices[i]=Player.NO;
-        }
-
+        initPlayer();
         btnReset = findViewById(R.id.btnReset);
         gridLayout = findViewById(R.id.gridLayout);
 
@@ -82,17 +78,22 @@ public class MainActivity extends AppCompatActivity {
     private void resetGame() {
         int childCount = gridLayout.getChildCount();
         for (int i = 0; i < childCount; i++) {
-          ImageView image = (ImageView) gridLayout.getChildAt(i);
-          image.setImageDrawable(null);
-          image.setAlpha(0.2f);
-            }
+            ImageView image = (ImageView) gridLayout.getChildAt(i);
+            image.setImageDrawable(null);
+            image.setAlpha(0.2f);
+        }
+        initPlayer();
+        gameOver = false;
+        btnReset.setVisibility(View.GONE);
+    }
+
+    public void initPlayer() {
         int length = playersChoices.length;
-        for (int i = 0; i <length ; i++) {
-            playersChoices[i]=Player.NO;
+        for (int i = 0; i < length; i++) {
+            playersChoices[i] = Player.NO;
         }
         currentPlayer = Player.ONE;
-        gameOver = false;
-        }
+    }
 
 
 }
